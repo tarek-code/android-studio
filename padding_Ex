@@ -1,0 +1,7 @@
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="phone number"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:padding="22dp"  //this the padding
+        />
