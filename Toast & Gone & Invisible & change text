@@ -24,7 +24,14 @@ public class MainActivity extends AppCompatActivity {
         sin_Up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             Toast.makeText(MainActivity.this,"welome"+edtxt_Sign_up.getText().toString(),Toast.LENGTH_LONG).show();
+             
+             Toast.makeText(MainActivity.this,"welome"+edtxt_Sign_up.getText().toString(),Toast.LENGTH_LONG).show();  //Toast
+             
+             tv_Sign_up.setText(edtxt_Sign_up.getText().toString());   //change txt
+             
+             tv_Sign_up.setText(View.GONE);     //gone txt
+             
+             tv_Sign_up.setText(View.INVISIBLE);   //invisible txt
             }
         });
     }
