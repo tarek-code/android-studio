@@ -1,0 +1,34 @@
+// when you wana to move from windo to another in app
+package com.example.firistapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+         final TextView tv_Sign_up=findViewById(R.id.login_Text);
+        final EditText edtxt_Sign_up=findViewById(R.id.Edittxt);
+
+
+        Button sin_Up =findViewById(R.id.buttonid);
+        sin_Up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MainActivity.this,SignUpActivity.class); // this is the main code 
+                startActivity(intent);
+            }
+        });
+    }
+}
